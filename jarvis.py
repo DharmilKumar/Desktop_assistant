@@ -92,3 +92,8 @@ if __name__=="__main__" :
             except Exception as e:
                 print(e)
                 speak("mail is not send, please try again")
+        elif 'play music' in query:
+            m_dir = 'D:\\entertainment\\songs'
+            songs = os.listdir(m_dir)
+            print(songs)    
+            os.startfile(os.path.join(m_dir, songs[0]))
